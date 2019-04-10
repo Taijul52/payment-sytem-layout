@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="order__summary--header">Order Summary</h1>
+        <div class="order__summary">
+          <div class="order">
+            <div class="order-information">
+                <p>Trasaction ID: <span class="id">1234678</span></p>
+                <p>Total Amount: <span class="amount">$1234678</span></p>
+            </div>
+            <div class="order-QR-code">
+              <span>scan the code</span>
+              <img src="./QRcode.png" alt="">
+            </div>
+          </div>
+            <div class="button">
+                <button class="btn-order">Order</button>
+                <button class="btn-order-cancel">Order Cancel</button>
+              </div>
+      </div>
+      <!-- <div class="user__information">
+        <h1 class="payment__inforamtion--header">User Information</h1>
+        <form action="">
+          <div class="username">
+            <label for="">Username</label>
+            <input type="text" placeholder="username" />
+          </div>
+          <div class="email">
+            <label for="">Email</label>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="country">
+            <label for="">Country:</label>
+            <select name="" id="">
+              <option value="">Select Your Country</option>
+              <option value="">Bangladesh</option>
+              <option value="">India</option>
+              <option value="">China</option>
+              <option value="">Japan</option>
+            </select>
+          </div>
+          <div class="postal-code">
+            <label for="">Postal Code:</label>
+            <input type="number" placeholder="Postal code" />
+          </div>
+        </form>
+      </div> -->
+     <div class="main-payment-layout">
+        <div class="payment__information">
+            <h1 class="payment__information--header">Payment Information</h1>
+            <form action="" class="payment__information--form">
+              <div class="card-no">
+                <label for="">Card No:</label>
+                <input type="number" placeholder="Card No" />
+              </div>
+              <div class="expiration-date">
+                <label for="">Expiration Date:</label>
+                <input type="date" />
+              </div>
+              <div class="cvv-code">
+                  <label for="">CVV Code:</label>
+                  <input type="number" placeholder="cvv code" />
+                </div>
+            </form>
+        </div>
+        <div class="payment__methods">
+            <h1 class="payment__methods--header">Payment Methods</h1>
+            <form action="" class="payment__methods--form">
+              <div class="payment__methods--form-option1">
+                <input type="radio" name="Visa" id="" />  <span> Visa</span>
+                <input type="radio" name="Visa" id="" /> <span>DBBL NEXUS</span>
+                <input type="radio" name="Visa" id="" /> <span>Master Card</span>
+              </div>
+              <div class="payment__methods--form-option1">
+                <input type="radio" name="Visa" id="" /> <span>Visa</span>
+                <input type="radio" name="Visa" id="" /> <span>Master Card</span>
+                <input type="radio" name="Visa" id="" /> <span>DBBL NEXUS</span>
+              </div>
+              <div class="payment__methods--form-option1">
+                <input type="radio" name="Visa" id="" /> <span>Visa</span>
+                <input type="radio" name="Visa" id="" /> <span>Master Card</span>
+                <input type="radio" name="Visa" id="" /> <span>DBBL NEXUS</span>
+              </div>
+            </form>
+          </div>
+          
+     </div>
+     
+        
+  </body>
+</html>
