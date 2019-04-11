@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f1f1f1;
+  width: 80%;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  font-family: 1rem;
+  line-height: 1.4;
+}
+
+.main-header {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: .5rem;
+  padding: .8rem .8rem;
+  color: rgba(33, 150, 243, .6);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2.5rem;
+}
+
+.transaction {
+  background: whitesmoke;
+  padding: 1rem;
+  display: flex;
+  border: 1px solid white;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5rem;
+  color: #585858;
+
+}
+
+.transaction span {
+  color: rgba(33, 150, 243, .6);
+}
+
+.order-button {
+  padding: .5rem;
+}
+
+button {
+  border: none;
+  padding: .5rem 1rem;
+  color: #e2e1e1;
+  cursor: pointer;
+}
+
+.btn-order {
+  background: #2196F3;
+  opacity: 0.7;
+}
+
+.btn-order-cancel {
+  background: rgb(243, 33, 103);
+  opacity: 0.4;
+
+}
+
+.btn-order:hover,
+.btn-order-cancel:hover {
+  font-weight: bold;
+  opacity: .9;
+
+}
+
+@media (min-width: 40rem) {
+  .main-header {
+    /* margin-top: 1rem; */
+    padding: 1rem;
+    font-size: 2rem;
+
+  }
+
+  .transaction {
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 1rem !important;
+    height: 10vh;
+  }
+
+  .order-information {
+    position: absolute;
+    left: 15%;
+    font-size: 1.1rem;
+  }
+
+  .order-button {
+    position: absolute;
+    left: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+
+  }
+}
+
+
+/* payment information */
+.payment-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  background: wheat;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+/* main {
+  padding-top: 1rem;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff5454;
+}
+
+.customer-form {
+  padding: 1rem;
+} */
+
+.customer-form label {
+  font-weight: bold;
+}
+
+.customer-form label,
+.customer-form input,
+.customer-form select {
+  display: block;
+  margin-top: .8rem;
+  width: 100%;
+}
+
+.customer-form input,
+.customer-form select {
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+/* .customer-form input[type="checkbox"] */
+.customer-form input[id*="terms"],
+.customer-form input[id*="terms"]+label {
+  display: inline-block;
+  width: auto;
+  vertical-align: bottom;
+}
+
+.customer-form input:focus,
+.customer-form select:focus {
+  outline: none;
+  background: #d8f3df;
+  border-color: #2ddf5c;
+}
+
+.customer-form input.invalid,
+.customer-form select.invalid,
+.customer-form :invalid {
+  border-color: red !important;
+  background: #faacac;
+}
+
+#payment-information__header {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+
+/* payment-methods */
+.payment-methods {
+  margin-top: 1rem;
+  background: whitesmoke;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+.payment-methods__forms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+}
+
+.payment-methods__header {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  color: #555353
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: wheat;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: rgb(226, 192, 129);
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.fab {
+  background: wheat;
+  margin-left: .3rem;
+  color: rgb(128, 72, 118);
+  border: none;
+}
+
+@media (min-width: 40rem) {
+  .payment-information {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .customer-information {
+    width: 50%;
+  }
+
+  .customer-form {
+    margin-right: 1rem;
+    padding: 0 4rem;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .payment-methods {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .shift-left {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    left: 106%;
+    top: 45%;
+    padding: 0;
+    width: 87%;
+    /* border-top: 1px solid rgb(168, 167, 166); */
+    padding: 0 .5rem .5rem .5rem;
+    /* background: white; */
+  }
+
+  .shift-left input {
+    border: 1px solid rgb(168, 167, 166);
+  }
+
+  .item-shift {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

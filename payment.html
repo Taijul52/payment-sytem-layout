@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./payment.css">
+</head>
+
+<body>
+  <h1 class="main-header">Payment</h1>
+  <div class="transaction">
+    <div class="order-information">
+      <p>Trasaction ID: <span class="id">1234678</span></p>
+      <p>Total Amount: <span class="amount">$1234678</span></p>
+    </div>
+    <div class="order-button">
+      <button class="btn-order">Order</button>
+      <button class="btn-order-cancel">Order Cancel</button>
+    </div>
+    <!-- <p>Trasaction ID</p>
+    <span class="id">1234678</span> -->
+  </div>
+  <main class="payment-information">
+    <div class="customer-information">
+      <form action="index.html" class="customer-form">
+        <label for="" id="payment-information__header">User Information</label>
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" placeholder="Your First name">
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" placeholder="Your Last name">
+        <label for="title">Country</label>
+        <select name="" id="">
+          <option value="">Select Your Country</option>
+          <option value="">Bangladesh</option>
+          <option value="">India</option>
+          <option value="">China</option>
+          <option value="">Japan</option>
+        </select>
+        <label for="">Postal Code:</label>
+        <input type="number" placeholder="Postal code" />
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" placeholder="Your Email">
+
+        <div class="shift-left">
+          <label for="" id="payment-information__header">Payment Information</label>
+          <label for="">Card No:</label>
+          <input type="number" placeholder="Card No" />
+          <div class="item-shift">
+            <label for="">Expiration Date:</label>
+            <input type="month" />
+            <label for="">CVV Code:</label>
+            <input type="number" placeholder="cvv code" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="payment-methods">
+      <label for="" class="payment-methods__header">Payment Methods</label>
+      <form action="" class="payment-methods__forms">
+
+        <label class="container">
+          <i class="fab fa-cc-visa"></i> One
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+
+        </label>
+        <label class="container"><i class="fab fa-cc-mastercard 2x"></i> Two
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"><i class="fab fa-cc-visa"></i> Three
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><i class="fab fa-cc-visa"></i> Four
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <i class="fab fa-cc-visa"></i> One
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+
+        </label>
+        <label class="container"><i class="fab fa-cc-mastercard 2x"></i> Two
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"><i class="fab fa-cc-visa"></i> Three
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"> <i class="fab fa-cc-visa"></i> Four
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <i class="fab fa-cc-visa"></i> One
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+
+        </label>
+        <label class="container"><i class="fab fa-cc-mastercard 2x"></i> Two
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"><i class="fab fa-cc-visa"></i> Three
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"><i class="fab fa-cc-visa"></i> Four
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
